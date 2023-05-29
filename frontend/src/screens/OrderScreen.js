@@ -206,8 +206,7 @@ const OrderScreen = ({ match, history }) => {
               </ListGroup.Item>
               {!order.isPaid && (
                 <ListGroup.Item>
-                  {loadingPay && <Loader />}
-                  {sdkReady ? (
+                  {!sdkReady ? (
                     <Loader />
                   ) : (
                     <PayPalButton
