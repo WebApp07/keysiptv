@@ -25,6 +25,15 @@ const Product = ({ product }) => {
 
         <Card.Text as="h3">${product.price}</Card.Text>
       </Card.Body>
+            div className="mt-6 flex items-center">
+        <Check
+          aria-hidden="true"
+          className="h-5 w-5 flex-shrink-0 text-green-500"
+        />
+        <p className="ml-2 text-sm text-muted-foreground">
+          Eligible for instant delivery
+        </p>
+      </div>
     </Card>
   );
 };
